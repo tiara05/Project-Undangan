@@ -35,6 +35,11 @@
     border-radius: 1rem; /* Membulatkan sudut form-control */
 }
 
+.form-control:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Background putih dengan transparansi saat hover */
+    border-color: #ccc; /* Ubah border jika perlu */
+}
+
 /* Styling untuk placeholder */
 .form-control::placeholder {
     color: black; /* Warna placeholder hitam */
