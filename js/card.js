@@ -1,8 +1,8 @@
-import { util } from './util.js';
-import { theme } from './theme.js';
+import { pagination } from './pagination.js';
 import { session } from './session.js';
 import { storage } from './storage.js';
-import { pagination } from './pagination.js';
+import { theme } from './theme.js';
+import { util } from './util.js';
 
 export const card = (() => {
 
