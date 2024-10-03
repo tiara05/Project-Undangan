@@ -33,6 +33,7 @@
     background-color: white; /* Form background putih */
     color: black; /* Warna teks normal hitam */
     border-radius: 1rem; /* Membulatkan sudut form-control */
+    border: white;
 }
 
 .form-control:hover {
@@ -51,6 +52,7 @@
     background-color: white; /* Background form select putih */
     color: black; /* Warna teks normal hitam */
     border-radius: 1rem; /* Membulatkan sudut form-select */
+    border: white;
 }
 
 
