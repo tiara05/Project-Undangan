@@ -18,15 +18,48 @@
     font-family: 'Noto Naskh Arabic', serif !important;
 }
 
-.form-control {
-    background-color: white; 
+/* Styling untuk card */
+.card {
+    background-color: #f5f5f5;
     color: black;
+    padding: 2%;
+    margin-top: 5%;
+    border-radius: 1.5rem; /* Untuk membulatkan sudut card */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow halus */
 }
 
-.form-presence{
-    background-color: white; 
-    color: black;
+/* Styling untuk form-control */
+.form-control {
+    background-color: white; /* Form background putih */
+    color: black; /* Warna teks normal hitam */
+    border-radius: 1rem; /* Membulatkan sudut form-control */
 }
+
+/* Styling untuk placeholder */
+.form-control::placeholder {
+    color: black; /* Warna placeholder hitam */
+    opacity: 0.7; /* Sedikit transparan agar placeholder terlihat lebih lembut */
+}
+
+/* Styling untuk select */
+.form-select {
+    background-color: white; /* Background form select putih */
+    color: black; /* Warna teks normal hitam */
+    border-radius: 1rem; /* Membulatkan sudut form-select */
+}
+
+
+/* Responsif untuk form-control */
+@media (max-width: 600px) {
+    .card {
+        margin-top: 10%; /* Margin top lebih besar di layar kecil */
+    }
+
+    .form-control {
+        font-size: 0.9rem; /* Ukuran teks form lebih kecil di layar kecil */
+    }
+}
+
 
 .frame-image {
     position: relative;
