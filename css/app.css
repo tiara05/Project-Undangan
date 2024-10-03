@@ -1,0 +1,283 @@
+@import url("common.css");
+@import url("animation.css");
+
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.font-esthetic {
+    font-family: Sacramento, cursive !important;
+}
+
+.font-arabic {
+    font-family: 'Noto Naskh Arabic', serif !important;
+}
+
+.frame-image {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    padding: 100px; /* Menambah ruang sekitar untuk bingkai */
+    background-image: url('../assets/images/bingkai.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.frame-image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;  /* Posisi gambar 50% dari atas */
+    left: 50%; /* Posisi gambar 50% dari kiri */
+    transform: translate(-50%, -50%); /* Untuk memastikan gambar berada tepat di tengah */
+    object-fit: cover; /* Menjaga agar gambar tidak terdistorsi */
+    object-position: center; /* Menempatkan gambar di tengah */
+    z-index: -1; /* Gambar tetap di belakang bingkai */
+}
+
+.img-crop {
+    height: 18rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-crop > img {
+    display: inline;
+    height: auto;
+    width: 100%;
+}
+
+hr {
+    width: 50%; /* Mengatur lebar hr */
+    border: 1px solid black; /* Garis solid hitam */
+    margin: 0 auto; /* Pusatkan hr secara horizontal */
+    display: block; /* Pastikan elemen diperlakukan sebagai blok */
+    color: #C69C46;
+}
+
+.video-container {
+    position: relative;
+    width: 100%; /* Mengisi lebar penuh kontainer */
+    max-width: 600px; /* Batas maksimal lebar video */
+    margin: auto; /* Tengah di halaman */
+    overflow: hidden; /* Menghindari elemen keluar dari kontainer */
+    border-radius: 10px; /* Sudut membulat */
+}
+
+.video-player {
+    width: 100%; /* Memastikan video memenuhi kontainer */
+    height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+    border-radius: 10px; /* Sudut membulat */
+    display: block; /* Menampilkan video sebagai blok */
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Menempatkan tombol di tengah */
+    color: white;
+    font-size: 50px; /* Ukuran simbol play */
+    cursor: pointer; /* Menunjukkan bahwa ini dapat diklik */
+    z-index: 10; /* Pastikan tombol di atas video */
+    display: none; /* Sembunyikan tombol secara default */
+}
+    
+.video-container:hover .play-button {
+    display: block; /* Tampilkan tombol saat hover */
+}
+
+/* Media query untuk ukuran layar yang lebih kecil */
+@media (max-width: 768px) {
+    .play-button {
+        font-size: 30px; /* Mengurangi ukuran tombol pada layar kecil */
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .carousel-item .col-md-4 {
+        display: none; /* Sembunyikan semua kolom di mobile */
+    }
+    .carousel-item .col-md-4:first-child {
+        display: block; /* Tampilkan hanya kolom pertama */
+    }
+}
+
+/* Aturan untuk tampilan mobile (layar kecil) */
+@media (max-width: 768px) {
+    .row {
+        text-align: center; /* Teks di tengah pada layar kecil */
+    }
+    
+    .col-12.col-md-5 {
+        order: 2; /* Teks di bawah gambar */
+        align-items: center !important; /* Pastikan teks tetap rata tengah */
+    }
+
+    .col-12.col-md-4 {
+        order: 1; /* Gambar di atas teks */
+    }
+}
+
+
+.btn-music {
+    position: fixed;
+    bottom: 9vh !important;
+    right: 2vh !important;
+    z-index: 1055 !important;
+}
+
+.loading-page {
+    position: fixed;
+    inset: 0 !important;
+    width: 100%;
+    height: 100%;
+    z-index: 1056 !important;
+}
+
+.dark-section {
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.color-theme-white {
+    color: white;
+}
+
+.color-theme-black {
+    color: black;
+}
+
+.bg-cover-home {
+    position: absolute;
+    opacity: 0.2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, black, black, black, black, black, transparent);
+}
+
+
+
+.single-box {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	width: 100%;
+}
+.date-area {
+	display: flex;
+	/* background: linear-gradient(to right, #fff 45%, #D3976E 45%, #D3976E 45%, #fff 50%); */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 45%, #D3976E 45%, #D3976E 45%, rgba(255, 255, 255, 0) 50%);
+	order: 2;
+	text-align: center;
+	color: #fff;
+	font-size: 28px;
+	flex-basis: 100px;
+}
+.date-area>span {
+	font-size: 20px;
+	line-height: 70px;
+	margin: auto;
+	background: #D3976E;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+.content {
+	text-align: center;
+	padding: 20px;
+	border-radius: 25px;
+	color: #858585;
+	order: 3;
+	width: 80%;
+	padding-left: 10px;
+	background: #F5F5F5;
+}
+.content {
+	margin-bottom: 3%;
+}
+.content h2 {
+	margin: 0;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.content h3 {
+	margin: 5px;
+	font-size: 14px;
+	color: #000;
+}
+@media (min-width: 640px) {
+	.content, .custom {
+		width: 40%;
+	}
+	.box-right .content {
+		order: 1;
+		padding-right: 10px;
+		border-radius: 25px;
+	}
+	.box-right .custom {
+		order: 3;
+	}
+}
+
+.image-container {
+    width: 100%;
+    max-width: 400px; /* Tentukan ukuran maksimal gambar */
+    height: 350px; /* Tentukan tinggi untuk crop */
+    overflow: hidden; /* Potong gambar di luar area ini */
+    border-radius: 50% 50% 0 0; /* Lengkungkan bagian atas */
+    display: block;
+    margin: 0 auto; /* Posisikan gambar di tengah secara horizontal */
+    margin-bottom: 5%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Pastikan gambar mengisi container dengan baik */
+    object-position: center; /* Posisikan gambar di tengah */
+}
+
+/* Responsif untuk perangkat yang lebih kecil */
+@media (max-width: 600px) {
+    .image-container {
+        max-width: 300px;
+        height: 150px; /* Tinggi yang lebih kecil di layar kecil */
+    }
+}
+
+.background-overlay {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Sesuaikan tinggi elemen */
+    background: url('./assets/images/image.png'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+.background-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.597); /* Abu-abu dengan transparansi 50% */
+    z-index: 1; /* Pastikan overlay berada di atas background */
+}
+
+.background-overlay > * {
+    position: relative;
+    z-index: 2; /* Pastikan konten berada di atas overlay */
+}
