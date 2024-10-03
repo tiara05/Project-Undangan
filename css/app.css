@@ -18,7 +18,7 @@
     font-family: 'Noto Naskh Arabic', serif !important;
 }
 
-.form-control{
+.form-control .form-presence{
     background-color: white; 
     color: black;
 }
