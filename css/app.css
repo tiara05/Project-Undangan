@@ -10,7 +10,6 @@
     display: none;
 }
 
-
 /* Global Styles */
 .loading-page {
     height: 100vh;
@@ -103,7 +102,7 @@ hr {
 }
 
 .img-crop {
-    height: auto;
+    height: 18rem;
     position: relative;
     overflow: hidden;
 }
@@ -249,6 +248,7 @@ hr {
     object-fit: cover; /* Pastikan gambar mengisi container dengan baik */
     object-position: center; /* Posisikan gambar di tengah */
 }
+
 
 /* Responsive Media Queries */
 /* Max-width: 992px */
@@ -403,6 +403,10 @@ hr {
     color: #000;
 }
 
+h2.judul {
+    margin-top: 3%; /* Ini untuk tampilan mobile */
+}
+
 /* Responsiveness for small screens */
 @media (max-width: 576px) {
     #navbar-menu .nav-link i {
@@ -414,11 +418,19 @@ hr {
         font-size: 0.6rem;
         color: #000;
     }
-    .judul {
-        margin-top: 20%; /* Margin atas 15% pada perangkat mobile */
+    h2.judul {
+        margin-top: 20% !important; /* Ini untuk tampilan mobile */
     }
     .home {
         padding-bottom: 20%;
+    }
+    .btn-large {
+        font-size: 1rem; /* Mengurangi ukuran teks di perangkat kecil */
+        padding: 0.5rem 1rem; /* Mengurangi padding agar pas di layar kecil */
+    }
+    .btn-medium {
+        font-size: 0.5rem; /* Mengurangi ukuran teks di perangkat kecil */
+        padding: 0.5rem 1rem; /* Mengurangi padding agar pas di layar kecil */
     }
 }
 
@@ -427,7 +439,25 @@ hr {
         font-size: 1rem;
     }
 
+    h2.judul {
+        margin-top: 20% !important; /* Ini untuk tampilan mobile */
+    }
+
     #navbar-menu .nav-link span {
         font-size: 0.5rem;
     }
+}
+
+
+/* Ukuran default tombol */
+.btn-large {
+    font-size: 1.15rem; /* Meningkatkan ukuran teks */
+    padding: 0.5rem 1.5rem; /* Meningkatkan padding untuk memperbesar ukuran tombol */
+    border-radius: 2.0rem; /* Memberikan sedikit border-radius */
+}
+
+.btn-medium {
+    font-size: 0.9rem; /* Meningkatkan ukuran teks */
+    padding: 0.6rem 1.5rem; /* Meningkatkan padding untuk memperbesar ukuran tombol */
+    border-radius: 2.0rem; /* Memberikan sedikit border-radius */
 }
