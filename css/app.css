@@ -102,7 +102,7 @@ hr {
 }
 
 .img-crop {
-    height: 18rem;
+    height: auto;
     position: relative;
     overflow: hidden;
 }
@@ -121,6 +121,7 @@ hr {
     margin: auto;
     overflow: hidden;
     border-radius: 10px;
+    background-color: white;
 }
 
 .video-player {
@@ -219,7 +220,7 @@ hr {
     margin-bottom: 3%;
 }
 
-.content h2, .content h3 {
+.content h2 {
     margin: 0;
     font-size: 14px;
     text-transform: uppercase;
@@ -283,20 +284,6 @@ hr {
 
 /* Max-width: 576px */
 @media (max-width: 576px) {
-    .content,
-    .custom {
-        width: 40%;
-    }
-
-    .box-right .content {
-        order: 1;
-        padding-right: 10px;
-        border-radius: 25px;
-    }
-
-    .box-right .custom {
-        order: 3;
-    }
     .card {
         margin-top: 10%;
     }
@@ -332,6 +319,19 @@ hr {
         padding: 8px 12px;
     }
 }
+@media (min-width: 640px) {
+	.content, .custom {
+		width: 40%;
+	}
+	.box-right .content {
+		order: 1;
+		padding-right: 10px;
+		border-radius: 25px;
+	}
+	.box-right .custom {
+		order: 3;
+	}
+}
 
 /* Max-width: 375px */
 @media (max-width: 375px) {
@@ -357,3 +357,53 @@ hr {
     }
 }
 
+#navbar-menu {
+    background-color: white;
+    border-top: 1px solid #ddd;
+    width: 100%; /* Set width to 100% */
+}
+
+/* Navbar items */
+.navbar-nav {
+    flex-direction: row; /* Make nav items row-oriented */
+}
+
+/* Icons and text adjustment */
+#navbar-menu .nav-link i {
+    font-size: 1.5rem;
+    display: block;
+    margin: 0 auto;
+}
+
+#navbar-menu .nav-link span {
+    font-size: 1.0rem;
+    display: block;
+    text-align: center;
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 576px) {
+    #navbar-menu .nav-link i {
+        font-size: 1.2rem;
+    }
+
+    #navbar-menu .nav-link span {
+        font-size: 0.6rem;
+    }
+    .judul {
+        margin-top: 20%; /* Margin atas 15% pada perangkat mobile */
+    }
+    .home {
+        padding-bottom: 20%;
+    }
+}
+
+@media (max-width: 375px) {
+    #navbar-menu .nav-link i {
+        font-size: 1rem;
+    }
+
+    #navbar-menu .nav-link span {
+        font-size: 0.5rem;
+    }
+}

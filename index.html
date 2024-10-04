@@ -42,53 +42,53 @@
 <body style="overflow-y: hidden; color: black;">
 
     <!-- Navbar Bottom -->
-    <nav class="navbar-expand fixed-bottom rounded-top-4 border-top p-0" id="navbar-menu" style="background-color: white; color: black;">
+    <nav class="navbar navbar-expand fixed-bottom rounded-top-4 border-top p-0" id="navbar-menu">
         <ul class="navbar-nav nav-justified w-100 align-items-center">
-            
             <li class="nav-item">
-                <a class="nav-link" href="#home">
-                    <i class="fa-solid fa-user-group"></i>
-                    <span class="d-block" style="font-size: 0.7rem;">Mempelai</span>
+                <a class="nav-link text-center" href="#home">
+                    <i class="fas fa-user-group"></i>
+                    <span class="d-block">Mempelai</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#wedding-date">
-                    <i class="fa-solid fa-calendar-check"></i>
-                    <span class="d-block" style="font-size: 0.7rem;">Tanggal</span>
+                <a class="nav-link text-center" href="#wedding-date">
+                    <i class="fas fa-calendar-check"></i>
+                    <span class="d-block">Tanggal</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#location">
-                    <i class="fa-solid fa-map-location-dot"></i>
-                    <span class="d-block" style="font-size: 0.7rem;">Lokasi</span>
+                <a class="nav-link text-center" href="#location">
+                    <i class="fas fa-map-location-dot"></i>
+                    <span class="d-block">Lokasi</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#timeline">
-                    <i class="fa-solid fa-heart"></i>
-                    <span class="d-block" style="font-size: 0.7rem;">Cerita Kita</span>
+                <a class="nav-link text-center" href="#timeline">
+                    <i class="fas fa-heart"></i>
+                    <span class="d-block">Cerita</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#gallery">
-                    <i class="fa-solid fa-images"></i>
-                    <span class="d-block" style="font-size: 0.7rem;">Galeri</span>
+                <a class="nav-link text-center" href="#gallery">
+                    <i class="fas fa-images"></i>
+                    <span class="d-block">Galeri</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#comments">
-                    <i class="fa-solid fa-comments"></i>
-                    <span class="d-block" style="font-size: 0.7rem;">Ucapan</span>
+                <a class="nav-link text-center" href="#comments">
+                    <i class="fas fa-comments"></i>
+                    <span class="d-block">Ucapan</span>
                 </a>
             </li>
         </ul>
     </nav>
+    
 
     <!-- Main Content -->
-    <main  data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+    <main  data-bs-spy="scroll" data-bs-target="#navbar-menu"  data-bs-smooth-scroll="true" tabindex="0">
 
         <!-- Home -->
-        <section id="home" class="position-relative overflow-hidden p-0 m-0 " style="
+        <section id="home" class="position-relative overflow-hidden home  " style="
             background-color: white; /* Atur warna background */
             background-image: url('./assets/images/motif1.png'), url('./assets/images/motif1.png'), url('./assets/images/motif2.png'), url('./assets/images/motif2.png'); /* Memasukkan gambar 4 kali */
             background-repeat: no-repeat; /* Mencegah pengulangan gambar */
@@ -97,7 +97,7 @@
         ">
             <div class="text-center" data-aos="fade-up" data-aos-duration="2000">
 
-                <h2 class=" py-4 px-2" style="font-size: 2rem; font-family: Bacasime Antique;">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
+                <h2 class="judul py-4 px-2" style="font-size: 2rem;">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
                 <h2 class="font-arabic py-4 px-2" style="font-size: 2rem">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h2>
                 <p class=" px-3" style="font-size: 1.00rem;">Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami:</p>
 
@@ -164,7 +164,7 @@
         </section>
 
         <!-- Wedding Date -->
-        <section id="wedding-date" style="padding-top: 5%; padding-bottom: 5%;
+        <section id="wedding-date" class="home" style="padding-bottom: 5%;
             background-color: white; /* Atur warna background */
             background-image: url('./assets/images/motif1.png'), url('./assets/images/motif1.png'), url('./assets/images/motif2.png'), url('./assets/images/motif2.png'); /* Memasukkan gambar 4 kali */
             background-repeat: no-repeat; /* Mencegah pengulangan gambar */
@@ -175,7 +175,7 @@
             <div class="container">
                 <div class="text-center" >
 
-                    <h2 class=" py-3 " style="font-size: 3rem; font-family: cookie; " data-aos="fade-down" data-aos-duration="2000">Undangan & Acara</h2>
+                    <h2 class=" judul py-3 " style="font-size: 3rem; font-family: cookie; " data-aos="fade-down" data-aos-duration="2000">Undangan & Acara</h2>
 
                     <p class="mt-4 py-2" style="font-size: 1.25rem;" data-aos="fade-up" data-aos-duration="2000">Bahagia rasanya apabila anda berkenan hadir dan memberikan doa restu kepada kami. Kami mengundang anda untuk hadir dalam acara resepsi pernikahan kami berikut ini</p>
 
@@ -288,7 +288,7 @@
         </section>
 
         <!-- Cerita Kita -->
-        <section class="timeline" id="timeline" style="
+        <section class="timeline position-relative overflow-hidden p-0 m-0" id="timeline" style="
             background-color: white; /* Atur warna background */
             background-image: url('./assets/images/motif1.png'), url('./assets/images/motif1.png'), url('./assets/images/motif2.png'), url('./assets/images/motif2.png'); /* Memasukkan gambar 4 kali */
             background-repeat: no-repeat; /* Mencegah pengulangan gambar */
@@ -298,7 +298,7 @@
             <div class="container"style="padding-top: 3%">
 
                 <div class="text-center" data-aos="fade-down" data-aos-duration="2000">
-                    <h2 class=" py-3 " style="font-size: 3rem; font-family: cookie;">Cerita Kita</h2>
+                    <h2 class="judul py-3 " style="font-size: 3rem; font-family: cookie;">Cerita Kita</h2>
                     <p class=" px-3" style="font-size: 1.00rem;">Banyak cerita yang kami lalui sehingga akhirnya kami bisa bersatu, cerita yang akan kami kenang selalu, dan cerita itu kami bagi untuk anda.</p>
                 </div>
                 <div class="single-box" >
