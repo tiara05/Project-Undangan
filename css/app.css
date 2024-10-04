@@ -1,6 +1,106 @@
 @import url("common.css");
 @import url("animation.css");
 
+.loading-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 600px; /* Limit the content width for larger screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Default font size for large screens */
+#wedding-title {
+    font-size: 7.5rem;
+}
+
+/* Responsive font and layout for medium screens */
+@media (max-width: 992px) {
+    #wedding-title {
+        font-size: 5rem;
+    }
+
+    .loading-page {
+        padding: 0 20px;
+    }
+}
+
+/* Further adjustments for smaller screens */
+@media (max-width: 768px) {
+    #wedding-title {
+        font-size: 4rem;
+    }
+
+    .loading-page {
+        padding: 0 10px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 576px) {
+    #wedding-title {
+        font-size: 3rem;
+    }
+
+    .loading-page {
+        background-size: contain;
+        background-position: center top;
+        padding: 0 5px;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
+
+/* For very small screens (e.g., smartphones) */
+@media (max-width: 375px) {
+    #wedding-title {
+        font-size: 2.5rem;
+    }
+
+    .loading-page {
+        background-size: contain;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+}
+
 * {
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -19,15 +119,6 @@
 }
 
 /* Styling untuk card */
-.card {
-    background-color: #f5f5f5;
-    color: black;
-    padding: 2%;
-    margin-top: 5%;
-    border-radius: 1.5rem; /* Untuk membulatkan sudut card */
-    border: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow halus */
-}
 
 /* Styling untuk form-control */
 .form-control {
