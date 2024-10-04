@@ -102,7 +102,7 @@ hr {
 }
 
 .img-crop {
-    height: 18rem;
+    height: auto;
     position: relative;
     overflow: hidden;
 }
