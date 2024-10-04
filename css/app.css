@@ -381,6 +381,7 @@ hr {
     background-color: white;
     border-top: 1px solid #ddd;
     width: 100%; /* Set width to 100% */
+    color: #000;
 }
 
 /* Navbar items */
